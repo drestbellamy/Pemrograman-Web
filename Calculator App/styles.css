@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #4B4B4B;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.calculator {
+    background-color: #000000; /* Warna ungu gelap */
+    border-radius: 20px;
+    padding: 20px;
+    width: 340px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.display {
+    color: white;
+    text-align: right;
+    padding: 20px;
+    font-size: 48px;
+    font-weight: lighter;
+    border-radius: 10px;
+    background-color: skyblue; /* Warna ungu terang */
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+button {
+    padding: 20px;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+}
+
+button.number {
+    background-color: #9B30FF; /* Warna ungu terang */
+    color: white;
+}
+
+button.operator {
+    background-color: #BA55D3; /* Warna ungu medium */
+    color: white;
+}
+
+button.clear {
+    background-color: #8A2BE2; /* Warna ungu medium */
+    color: white;
+}
+
+button#equals {
+    background-color: #BA55D3; /* Warna ungu medium */
+    color: white;
+}
+
+button.zero {
+    grid-column: span 2;
+    width: 150px;
+    border-radius: 50px;
+}
