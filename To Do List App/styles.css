@@ -1,0 +1,103 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f2f2f7;
+    margin: 0;
+    padding: 20px; /* Added padding for better mobile appearance */
+}
+
+.todo-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    max-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+}
+
+.input-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#todo-input {
+    flex: 1;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #d1d1d6;
+    background-color: #f9f9f9;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+#add-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#add-btn:active {
+    background-color: #005bb5;
+}
+
+#todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Added margin reset for consistency */
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.todo-text {
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+.edit-btn, .delete-btn {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.edit-btn {
+    background-color: orange;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #ff3b30;
+    color: white;
+}
+
+.edit-btn:active, .delete-btn:active {
+    transform: scale(0.95);
+}
