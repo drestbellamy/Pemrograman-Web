@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serafino Showroom</title>
+    <link rel="stylesheet" href="../css/Tugas.css">
+</head>
+<body>
+    <header class="custom-header">
+        <div class="container">
+            <h1 class="logo">SERAFINO SHOWROOM</h1>
+            <nav class="nav-menu">
+                <a href="#">Collections</a>
+                <a href="#">Contact</a>
+                <a href="#">Shop Now</a>
+                <a href="#">More</a>
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-btn">X</button>
+                </div>
+                <button class="btn login-btn" id="login-btn" onclick="showLoginForm()">Login</button>
+                <button class="btn signup-btn" onclick="showSignUpForm()">Sign Up</button>
+                <span id="user-info"></span>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Login Form Modal -->
+    <div id="login-form" class="form-modal">
+        <div class="form-content">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button class="btn login-btn" onclick="login()">Login</button>
+            <button class="btn close-btn" onclick="closeForm('login-form')">Close</button>
+        </div>
+    </div>
+
+    <!-- Sign Up Form Modal -->
+    <div id="signup-form" class="form-modal">
+        <div class="form-content">
+            <h2>Sign Up</h2>
+            <input type="text" id="signup-username" placeholder="Username" required>
+            <input type="email" id="signup-email" placeholder="Email" required>
+            <input type="password" id="signup-password" placeholder="Password" required>
+            <button class="btn signup-btn" onclick="signUp()">Sign Up</button>
+            <button class="btn close-btn" onclick="closeForm('signup-form')">Close</button>
+        </div>
+    </div>
+
+    <!-- Profile Form Modal -->
+    <div id="profile-form" class="form-modal">
+        <div class="form-content">
+            <h2>Edit Profile</h2>
+            <input type="text" id="profile-name" placeholder="Name" required>
+            <input type="email" id="profile-email" placeholder="Email" required>
+            <div class="gender-group">
+                <label>
+                    <input type="radio" name="gender" value="Male" id="gender-male"> Male
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Female" id="gender-female"> Female
+                </label>
+                <label>
+                    <input type="radio" name="gender" value="Other" id="gender-other"> Other
+                </label>
+            </div>
+            <button class="btn save-btn" onclick="saveProfile()">Save</button>
+            <button class="btn close-btn" onclick="closeForm('profile-form')">Close</button>
+        </div>
+    </div>
+
+    <main class="custom-main">
+        <div class="container">
+            <h2>CHOOSE YOUR HORSE!</h2>
+            <div class="filter-bar">
+                <button class="filter-btn">+ SEDAN</button>
+                <button class="filter-show-more">SHOW MORE FILTERS</button>
+            </div>
+            <div class="card-container">
+                <!-- Car Card -->
+                <div class="card">
+                    <img src="../image/pexels-dbaler-13627440.jpg" class="card-img" alt="Toyota Supra MK4 1998">
+                    <div class="card-body">
+                        <h3 class="card-title">Toyota Supra MK4 1998</h3>
+                        <p class="card-price">Starting From Rp1.432.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+                <!-- Repeat for other cars -->
+                <div class="card">
+                    <img src="../image/pexels-mikebirdy-892522.jpg" class="card-img" alt="BMW M2 Coupe 2016">
+                    <div class="card-body">
+                        <h3 class="card-title">BMW M2 Coupe 2016</h3>
+                        <p class="card-price">Starting From Rp1.980.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../image/Screenshot 2024-10-04 110152.png" class="card-img" alt="Mercedes-Benz C300 AMG LINE">
+                    <div class="card-body">
+                        <h3 class="card-title">Mercedes-Benz C300 AMG LINE</h3>
+                        <p class="card-price">Starting From Rp1.350.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../image/2023-Honda-Civic-Type-R-005-1536.jpg" class="card-img" alt="Honda Civic Type R 2023">
+                    <div class="card-body">
+                        <h3 class="card-title">Honda Civic Type R 2023</h3>
+                        <p class="card-price">Starting From Rp1.399.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../image/Screenshot 2024-10-04 114245.png" class="card-img" alt="Nissan Silvia S15 Spec R">
+                    <div class="card-body">
+                        <h3 class="card-title">Nissan Silvia S15 Spec R</h3>
+                        <p class="card-price">Starting From Rp450.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../image/audi_a8_l_60_tfsi_e_quattro_2022_5k_3-HD.jpg" class="card-img" alt="Audi A8 L 60 E Quattro 2024">
+                    <div class="card-body">
+                        <h3 class="card-title">Audi A8 L 60 E Quattro 2024</h3>
+                        <p class="card-price">Starting From Rp2.950.000.000</p>
+                        <a href="#" class="card-link">Features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="custom-footer">
+        <p>© 2024 Serafino Showroom. All Rights Reserved.</p>
+    </footer>
+
+    <script src="../JavaScript/Showroom.js"></script>
+</body>
+</html>
